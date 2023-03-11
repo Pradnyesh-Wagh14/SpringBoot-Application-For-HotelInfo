@@ -1,7 +1,7 @@
-package com.igc.hoteldemo.entity;
+package com.igc.hoteldemo.model;
 
-public class FoodEntity {
-
+public class FoodModel {
+	
 	private int fid;
 	
 	private String fname;
@@ -10,9 +10,11 @@ public class FoodEntity {
 	
 	private int qty;
 
-	public FoodEntity() {}
+	public FoodModel() {
+		// TODO Auto-generated constructor stub
+	}
 	
-	public FoodEntity(int fid, String fname, double price, int qty) {
+	public FoodModel(int fid, String fname, double price, int qty) {
 		super();
 		this.fid = fid;
 		this.fname = fname;
@@ -56,6 +58,4 @@ public class FoodEntity {
 	public String toString() {
 		return "FoodEntity [fid=" + fid + ", fname=" + fname + ", price=" + price + ", qty=" + qty + "]";
 	}
-	
-	
 }
